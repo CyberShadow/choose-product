@@ -31,6 +31,11 @@ static this()
 struct Product
 {
 	string asin;
+	@property string url() { return "https://www.amazon.com/dp/" ~ asin; }
+
+	string title, description, features;
+
+	@property string text() { return [title, description, features].join(" | "); }
 }
 
 Product[] getProducts(string query)
@@ -67,8 +72,12 @@ Product[] getProducts(string query)
 		Product product;
 		product.asin = asin;
 
-		auto productURL = "https://www.amazon.com/dp/" ~ asin;
+		auto productURL = product.url;
 		auto doc = new Document(productURL.amazonGet);
+
+		product.title = doc.querySelector("#productTitle").innerText.strip;
+		product.description = doc.querySelector("#productDescription").innerText.strip;
+		product.features = doc.querySelector("#feature-bullets").innerText.strip;
 
 		products ~= product;
 	}
