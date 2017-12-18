@@ -11,9 +11,10 @@ import std.stdio;
 import std.string;
 
 import ae.net.ietf.url;
+import ae.sys.net;
+import ae.sys.net.cachedcurl;
+import ae.utils.array;
 import ae.utils.regex;
-
-import net;
 
 struct Product
 {
@@ -30,7 +31,8 @@ Product[] getProducts(string indexURL)
 	{
 		auto pageURL = indexURL ~ "?q=%3A&page=" ~ text(page);
 		auto newURLs = pageURL
-			.cachedGet
+			.getFile
+			.bytes
 			.assumeUTF
 			.assumeUnique
 			.extractCapture(re!`<a href="(/.*?)" class="facetedResults-cta">`)
@@ -50,7 +52,8 @@ Product[] getProducts(string indexURL)
 		try
 		{
 			auto html = url
-				.cachedGet()
+				.getFile
+				.bytes
 				.assumeUTF
 				.assumeUnique;
 
@@ -141,13 +144,13 @@ int getCPUSpeed(string cpuName)
 
 	scope(failure) writeln(passmarkSearchURL);
 	auto passmarkSearchHTML = passmarkSearchURL
-		.cachedGet.assumeUTF.assumeUnique;
+		.getFile.bytes.assumeUTF.assumeUnique;
 	auto passmarkResults = passmarkSearchHTML
 		.extractCapture(re!`<a href="(https://www\.cpubenchmark\.net/cpu\.php\?cpu=.*?)" >`);
 	if (!passmarkResults.empty)
 	{
 		return passmarkResults.front
-			.cachedGet.assumeUTF.assumeUnique
+			.getFile.bytes.assumeUTF.assumeUnique
 			.extractCapture!int(re!`Single Thread Rating: (\d+)`)
 			.front;
 	}
