@@ -1,9 +1,13 @@
+import core.thread;
+
 import std.algorithm.iteration;
 import std.algorithm.searching;
 import std.algorithm.sorting;
 import std.array;
 import std.conv;
+import std.datetime.systime;
 import std.exception;
+import std.stdio : stderr;
 import std.string;
 
 import ae.net.ietf.url;
@@ -15,9 +19,12 @@ import ae.utils.regex;
 
 import arsd.dom;
 
+CachedCurlNetwork ccnet;
+
 static this()
 {
-	auto ccnet = cast(CachedCurlNetwork)net;
+	ccnet = cast(CachedCurlNetwork)net;
+	ccnet.cookieDir = "cookies";
 	ccnet.http.verbose = true;
 }
 
@@ -39,10 +46,7 @@ Product[] getProducts(string query)
 			]);
 
 		auto newASINs = pageURL
-			.getFile
-			.bytes
-			.assumeUTF
-			.assumeUnique
+			.amazonGet
 			.I!(s => new Document(s))
 			.querySelectorAll(".s-result-item")
 			// .map!(node => node.attributes["data-asin"])
@@ -64,14 +68,32 @@ Product[] getProducts(string query)
 		product.asin = asin;
 
 		auto productURL = "https://www.amazon.com/dp/" ~ asin;
-		auto doc = new Document(productURL
-			.getFile
-			.bytes
-			.assumeUTF
-			.assumeUnique
-		);
+		auto doc = new Document(productURL.amazonGet);
 
 		products ~= product;
 	}
 	return products;
+}
+
+private string amazonGet(string url)
+{
+	ccnet.epoch = 0;
+	string html;
+	for (int tries = 0; ; tries++)
+	{
+		html = url
+			.getFile
+			.bytes
+			.assumeUTF
+			.assumeUnique;
+
+		if (html.canFind("Sorry, we just need to make sure you're not a robot."))
+		{
+			stderr.writeln("Backing off...");
+			Thread.sleep((1 << tries).seconds);
+			ccnet.epoch = Clock.currTime.stdTime;
+		}
+		else
+			return html;
+	}
 }
