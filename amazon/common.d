@@ -1,5 +1,6 @@
 import std.algorithm.iteration;
 import std.algorithm.searching;
+import std.algorithm.sorting;
 import std.array;
 import std.conv;
 import std.exception;
@@ -27,38 +28,50 @@ struct Product
 
 Product[] getProducts(string query)
 {
+	string[] allASINs;
 	for (int page = 1; ; page++)
 	{
 		auto pageURL =
-			// "https://www.amazon.com/gp/search?" ~
 			"https://www.amazon.com/s?" ~
 			encodeUrlParameters([
 				"rh" : "k:" ~ query,
 				"page" : text(page),
 			]);
-		import std.stdio; writeln(pageURL);
 
-		auto asins = pageURL
+		auto newASINs = pageURL
 			.getFile
 			.bytes
 			.assumeUTF
 			.assumeUnique
 			.I!(s => new Document(s))
-			.querySelectorAll("#atfResults .s-access-detail-page")
-			.map!(node => applyRelativeURL(pageURL, node.attributes["href"]).extractASIN())
+			.querySelectorAll(".s-result-item")
+			// .map!(node => node.attributes["data-asin"])
+			.filter!(node => node.attributes["id"] != "s-result-list-layout-placeholder")
+			.map!(node => node.attributes["data-asin"])
 			.array;
 
-		if (asins.length == 0)
+		if (newASINs.length == 0)
 			break;
 
-		import std.stdio; writeln(asins);
+		allASINs ~= newASINs;
 	}
-	assert(false);
-}
 
-string extractASIN(string url)
-{
-	if (url.canFind("picassoRedirect.html"))
-		url = url.findSplit("?")[2].decodeUrlParameters()["url"];
-	return url.extractCapture!string(re!`/dp/(.*?)/`).front;
+	allASINs = allASINs.sort.uniq.array;
+	Product[] products;
+	foreach (asin; allASINs)
+	{
+		Product product;
+		product.asin = asin;
+
+		auto productURL = "https://www.amazon.com/dp/" ~ asin;
+		auto doc = new Document(productURL
+			.getFile
+			.bytes
+			.assumeUTF
+			.assumeUnique
+		);
+
+		products ~= product;
+	}
+	return products;
 }
