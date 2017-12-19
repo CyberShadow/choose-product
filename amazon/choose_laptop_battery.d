@@ -21,8 +21,14 @@ void main()
 
 			bool nope(string why) { writefln("Filtering out %s because %s", product.title, why); return false; }
 
-			if (s.toLower.match(re!`4400\s*mah`))
+			if (s.toLower.match(re!`4[24]00\s*mah`))
 				return nope("it has too few mAh");
+
+			// if (product.numReviews < 3)
+			// 	return nope("it has too few reviews");
+
+			// if (product.avgScore < 4)
+			// 	return nope("it has poor reviews");
 
 			if (!s.toLower.match(re!`mah\b`))
 				return nope("it doesn't mention how many mAh it has");
@@ -34,7 +40,7 @@ void main()
 
 	foreach_reverse (product; products)
 	{
-		writefln("%s - %s", product.url, product.title);
+		writefln("%s - %3.1f (%d) - %s", product.url, product.avgScore, product.numReviews, product.title);
 		writeln();
 	}
 
