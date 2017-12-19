@@ -7,6 +7,7 @@ import std.array;
 import std.conv;
 import std.datetime.systime;
 import std.exception;
+import std.range;
 import std.stdio : stderr;
 import std.string;
 
@@ -36,6 +37,9 @@ struct Product
 	string title, description, features;
 
 	@property string text() { return [title, description, features].join(" | "); }
+
+	float avgScore;
+	int numReviews;
 }
 
 Product[] getProducts(string query)
@@ -78,6 +82,14 @@ Product[] getProducts(string query)
 		product.title = doc.querySelector("#productTitle").innerText.strip;
 		product.description = doc.querySelector("#productDescription").innerText.strip;
 		product.features = doc.querySelector("#feature-bullets").innerText.strip;
+		product.avgScore = chain(
+			doc.querySelectorAll("#acrPopover").map!(node => node.attributes["title"].split()[0].to!float),
+			float.nan.only,
+		).front;
+		product.numReviews = chain(
+			doc.querySelectorAll("#acrCustomerReviewText").map!(node => node.innerText.split()[0].to!int),
+			0.only,
+		).front;
 
 		products ~= product;
 	}
