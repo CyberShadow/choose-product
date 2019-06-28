@@ -15,7 +15,7 @@ void main()
 		"SM-N910A",
 		"SM-N910F",
 		"SM-N910G",
-		"SM-N910H",
+	//	"SM-N910H",
 		"SM-N910P",
 		"SM-N910R4",
 		"SM-N910V",
@@ -23,12 +23,13 @@ void main()
 		"SM-N910T3",
 		"SM-N910V",
 		"SM-N910W8",
-		"SM-N915F",
-		"SM-N915G",
-		"SM-N915P",
-		"SM-N915R4",
-		"SM-N915T",
-		"SM-N915W8",
+
+		// "SM-N915F",
+		// "SM-N915G",
+		// "SM-N915P",
+		// "SM-N915R4",
+		// "SM-N915T",
+		// "SM-N915W8",
 	];
 
 	auto data = modelNames.map!(modelName => getProduct(/*productName, */modelName)).array;
@@ -50,6 +51,7 @@ void main()
 						"Network/Bearer - 2G GSM",
 						"Network/Bearer - 3G UMTS",
 						"Network/Bearer - 4G LTE",
+						"Connectivity - Location Technology",
 					))
 				{
 					foreach (item; spec.value.split(","))
