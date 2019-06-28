@@ -1,3 +1,5 @@
+import ae.utils.aa;
+
 import std.algorithm.comparison;
 import std.algorithm.iteration;
 import std.array;
@@ -31,12 +33,16 @@ void main()
 
 	auto data = modelNames.map!(modelName => getProduct(/*productName, */modelName)).array;
 
-	string[string][string][] specs;
+	alias MSS = OrderedMap!(string, string);
+	alias MSMS = OrderedMap!(string, MSS);
+	MSMS[] specs;
 	specs.length = data.length;
 	foreach (i, datum; data)
 		foreach (cat; datum.categories)
 			foreach (spec; cat.specs)
 			{
+				if (cat.name !in specs[i])
+					specs[i][cat.name] = MSS.init; // TODO
 				if ((cat.name ~ " - " ~ spec.name).among(
 						"General Information - Color",
 						"Audio and Video - Video Playing Format",
@@ -53,18 +59,22 @@ void main()
 					specs[i][cat.name][spec.name] = spec.value;
 			}
 
-	bool[string][string] allProps;
+	OrderedMap!(string, OrderedSet!string) allProps;
 	foreach (spec; specs)
 		foreach (catName, catProps; spec)
+		{
+			if (catName !in allProps)
+				allProps[catName] = OrderedSet!string.init; // TODO
 			foreach (specName, value; catProps)
-				allProps[catName][specName] = true;
+				allProps[catName].add(specName);
+		}
 
 	bool[string][string] differentProps;
 	foreach (catName, catProps; allProps)
-		foreach (propName, b; catProps)
+		foreach (propName; catProps)
 			foreach (spec; specs)
-				if (spec    .get(catName, null).get(propName, null) !=
-					specs[0].get(catName, null).get(propName, null))
+				if (spec    .get(catName, MSS.init).get(propName, null) !=
+					specs[0].get(catName, MSS.init).get(propName, null))
 					differentProps[catName][propName] = true;
 
 	// foreach (datum; data[1..$])
@@ -80,13 +90,13 @@ void main()
 
 	writefln("| Property | %-(%s | %|%)", modelNames);
 	foreach (catName, catProps; allProps)
-		foreach (propName, b; catProps)
+		foreach (propName; catProps)
 			if (differentProps.get(catName, null).get(propName, false))
 			{
 				writeln("|-");
 				write("| ", catName, " - ", propName, " | ");
 				foreach (i, spec; specs)
-					write(spec.get(catName, null).get(propName, "-"), " | ");
+					write(spec.get(catName, MSS.init).get(propName, "-"), " | ");
 				writeln;
 			}
 	
