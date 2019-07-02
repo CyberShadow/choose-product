@@ -1,105 +1,105 @@
-|-----------------------------------------------------------+-----------+-----------+-----------+-----------+-----------------+-----------+------------+------------+-----------+-----------|
-| Property                                                  | SM-N910A  | SM-N910F  | SM-N910G  | SM-N910P  | SM-N910R4       | SM-N910V  | SM-N910T   | SM-N910T3  | SM-N910V  | SM-N910W8 |
-|-----------------------------------------------------------+-----------+-----------+-----------+-----------+-----------------+-----------+------------+------------+-----------+-----------|
-| General Information - Model name                          | (AT&T)    |           |           | (Sprint)  | (U.S. Cellular) | (Verizon) | (T-Mobile) | (T-Mobile) | (Verizon) |           |
-| General Information - Model Number                        | SM-N910A  | SM-N910F  | SM-N910G  | SM-N910P  | SM-N910R4       | SM-N910V  | SM-N910T   | SM-N910T3  | SM-N910V  | SM-N910W8 |
-|-----------------------------------------------------------+-----------+-----------+-----------+-----------+-----------------+-----------+------------+------------+-----------+-----------|
-| Network/Bearer - 2G GSM - 2G CDMA: CDMA800                | -         | -         | -         | -         | Y               | -         | -          | -          | -         | -         |
-| Network/Bearer - 2G GSM - DCS1800                         | Y         | Y         | Y         | Y         | -               | Y         | Y          | Y          | Y         | Y         |
-| Network/Bearer - 2G GSM - GSM850                          | Y         | Y         | Y         | -         | -               | Y         | Y          | Y          | Y         | Y         |
-| Network/Bearer - 2G GSM - GSM900                          | Y         | Y         | Y         | Y         | -               | Y         | Y          | Y          | Y         | Y         |
-| Network/Bearer - 2G GSM - PCS1900                         | Y         | Y         | Y         | -         | -               | Y         | Y          | Y          | Y         | Y         |
-| Network/Bearer - 2G GSM - PCS1900 2G CDMA: CDMA800        | -         | -         | -         | Y         | -               | -         | -          | -          | -         | -         |
-| Network/Bearer - 2G GSM - USPCS1900                       | -         | -         | -         | Y         | Y               | -         | -          | -          | -         | -         |
-| Network/Bearer - 3G UMTS - 3G CDMA : BC0(800)             | -         | -         | -         | -         | Y               | -         | -          | -          | -         | -         |
-| Network/Bearer - 3G UMTS - 3G UMTS: B1(2100)              | -         | -         | -         | -         | -               | Y         | -          | -          | Y         | -         |
-| Network/Bearer - 3G UMTS - B1(2100)                       | Y         | Y         | Y         | Y         | -               | -         | -          | -          | -         | Y         |
-| Network/Bearer - 3G UMTS - B2(1900)                       | Y         | Y         | Y         | Y         | -               | Y         | Y          | Y          | Y         | Y         |
-| Network/Bearer - 3G UMTS - B39(1880)                      | -         | -         | -         | -         | -               | Y         | -          | -          | Y         | -         |
-| Network/Bearer - 3G UMTS - B4(AWS)                        | -         | -         | -         | -         | -               | -         | Y          | Y          | -         | Y         |
-| Network/Bearer - 3G UMTS - B5(850)                        | Y         | Y         | Y         | Y         | -               | Y         | Y          | Y          | Y         | Y         |
-| Network/Bearer - 3G UMTS - B8(900)                        | -         | Y         | Y         | -         | -               | -         | -          | -          | -         | -         |
-| Network/Bearer - 3G UMTS - B8(900) 3G TD-SCDMA: B34(2010) | -         | -         | -         | -         | -               | Y         | -          | -          | Y         | -         |
-| Network/Bearer - 3G UMTS - B8(900); 3G CDMA: BC0(800)     | -         | -         | -         | Y         | -               | -         | -          | -          | -         | -         |
-| Network/Bearer - 3G UMTS - BC1(1900)                      | -         | -         | -         | Y         | Y               | -         | -          | -          | -         | -         |
-| Network/Bearer - 3G UMTS - BC10(800)                      | -         | -         | -         | Y         | -               | -         | -          | -          | -         | -         |
-| Network/Bearer - 3G UMTS - WCDMA: B1(2100)                | -         | -         | -         | -         | -               | -         | Y          | Y          | -         | -         |
-| Network/Bearer - 4G LTE - 4G FDD LTE: B1(2100)            | -         | -         | Y         | -         | -               | -         | -          | -          | -         | Y         |
-| Network/Bearer - 4G LTE - 4G FDD LTE: B25(1900)           | -         | -         | -         | Y         | -               | -         | -          | -          | -         | -         |
-| Network/Bearer - 4G LTE - 4G LTE FDD : B1(2100)           | -         | -         | -         | -         | -               | -         | Y          | Y          | -         | -         |
-| Network/Bearer - 4G LTE - 4G LTE FDD : B2(1900)           | -         | -         | -         | -         | Y               | -         | -          | -          | -         | -         |
-| Network/Bearer - 4G LTE - 4G TDD LTE: B38(2600)           | -         | -         | -         | -         | -               | Y         | -          | -          | Y         | -         |
-| Network/Bearer - 4G LTE - B1(2100)                        | -         | Y         | -         | -         | -               | -         | -          | -          | -         | -         |
-| Network/Bearer - 4G LTE - B12(700)                        | Y         | -         | -         | -         | Y               | -         | Y          | Y          | -         | Y         |
-| Network/Bearer - 4G LTE - B17(700)                        | Y         | Y         | -         | -         | Y               | -         | Y          | Y          | -         | Y         |
-| Network/Bearer - 4G LTE - B2(1900)                        | Y         | Y         | Y         | -         | -               | -         | Y          | Y          | -         | Y         |
-| Network/Bearer - 4G LTE - B20(800)                        | -         | Y         | -         | -         | -               | -         | -          | -          | -         | -         |
-| Network/Bearer - 4G LTE - B26(850); 4G TDD LTE: B41(2500) | -         | -         | -         | Y         | -               | -         | -          | -          | -         | -         |
-| Network/Bearer - 4G LTE - B28(700) 4G TDD LTE: B38(2600)  | -         | -         | Y         | -         | -               | -         | -          | -          | -         | -         |
-| Network/Bearer - 4G LTE - B3(1800)                        | -         | Y         | Y         | -         | -               | -         | Y          | Y          | -         | Y         |
-| Network/Bearer - 4G LTE - B39(1900)                       | -         | -         | -         | -         | -               | Y         | -          | -          | Y         | -         |
-| Network/Bearer - 4G LTE - B4(AWS)                         | Y         | Y         | Y         | -         | Y               | -         | Y          | Y          | -         | Y         |
-| Network/Bearer - 4G LTE - B40(2300)                       | -         | -         | Y         | -         | -               | Y         | -          | -          | Y         | -         |
-| Network/Bearer - 4G LTE - B41(2500 4G FDD LTE: B3(1800)   | -         | -         | -         | -         | -               | Y         | -          | -          | Y         | -         |
-| Network/Bearer - 4G LTE - B5(850)                         | Y         | Y         | Y         | -         | Y               | -         | Y          | Y          | -         | Y         |
-| Network/Bearer - 4G LTE - B7(2600)                        | -         | Y         | Y         | -         | -               | Y         | Y          | Y          | Y         | Y         |
-| Network/Bearer - 4G LTE - B8(900)                         | -         | Y         | Y         | -         | -               | -         | Y          | Y          | -         | Y         |
-|-----------------------------------------------------------+-----------+-----------+-----------+-----------+-----------------+-----------+------------+------------+-----------+-----------|
-| Connectivity - Location Technology - Beidou               | -         | Y         | Y         | -         | -               | -         | -          | -          | -         | -         |
-|-----------------------------------------------------------+-----------+-----------+-----------+-----------+-----------------+-----------+------------+------------+-----------+-----------|
-| Battery - Internet Usage Time(3G)                         | Up to 11h | Up to 10h | Up to 11h | Up to 11h | Up to 11h       | -         | Up to 11h  | Up to 11h  | -         | Up to 11h |
-| Battery - Internet Usage Time(LTE)                        | Up to 11h | Up to 11h | Up to 10h | Up to 11h | Up to 11h       | -         | Up to 11h  | Up to 11h  | -         | Up to 11h |
-| Battery - Internet Usage Time(Wi-Fi)                      | Up to 12h | Up to 12h | Up to 13h | Up to 12h | Up to 12h       | -         | Up to 12h  | Up to 12h  | -         | Up to 12h |
-| Battery - Video Playback Time                             | Up to 14h | Up to 14h | Up to 12h | Up to 14h | Up to 14h       | -         | Up to 14h  | Up to 14h  | -         | Up to 14h |
-| Battery - Audio Playback Time                             | Up to 80h | Up to 82h | Up to 57h | Up to 80h | Up to 80h       | -         | Up to 80h  | Up to 80h  | -         | Up to 80h |
-| Battery - Talk time                                       | Up to 37h | Up to 20h | Up to 20h | Up to 37h | Up to 37h       | -         | Up to 37h  | Up to 37h  | -         | Up to 37h |
-|-----------------------------------------------------------+-----------+-----------+-----------+-----------+-----------------+-----------+------------+------------+-----------+-----------|
+|-----------------------------------------------------------+-----------+-----------+-----------+-----------+-----------------+-----------+------------+------------+-----------|
+| Property                                                  | SM-N910A  | SM-N910F  | SM-N910G  | SM-N910P  | SM-N910R4       | SM-N910V  | SM-N910T   | SM-N910T3  | SM-N910W8 |
+|-----------------------------------------------------------+-----------+-----------+-----------+-----------+-----------------+-----------+------------+------------+-----------|
+| General Information - Model name                          | (AT&T)    |           |           | (Sprint)  | (U.S. Cellular) | (Verizon) | (T-Mobile) | (T-Mobile) |           |
+| General Information - Model Number                        | SM-N910A  | SM-N910F  | SM-N910G  | SM-N910P  | SM-N910R4       | SM-N910V  | SM-N910T   | SM-N910T3  | SM-N910W8 |
+|-----------------------------------------------------------+-----------+-----------+-----------+-----------+-----------------+-----------+------------+------------+-----------|
+| Network/Bearer - 2G GSM - 2G CDMA: CDMA800                | -         | -         | -         | -         | Y               | -         | -          | -          | -         |
+| Network/Bearer - 2G GSM - DCS1800                         | Y         | Y         | Y         | Y         | -               | Y         | Y          | Y          | Y         |
+| Network/Bearer - 2G GSM - GSM850                          | Y         | Y         | Y         | -         | -               | Y         | Y          | Y          | Y         |
+| Network/Bearer - 2G GSM - GSM900                          | Y         | Y         | Y         | Y         | -               | Y         | Y          | Y          | Y         |
+| Network/Bearer - 2G GSM - PCS1900                         | Y         | Y         | Y         | -         | -               | Y         | Y          | Y          | Y         |
+| Network/Bearer - 2G GSM - PCS1900 2G CDMA: CDMA800        | -         | -         | -         | Y         | -               | -         | -          | -          | -         |
+| Network/Bearer - 2G GSM - USPCS1900                       | -         | -         | -         | Y         | Y               | -         | -          | -          | -         |
+| Network/Bearer - 3G UMTS - 3G CDMA : BC0(800)             | -         | -         | -         | -         | Y               | -         | -          | -          | -         |
+| Network/Bearer - 3G UMTS - 3G UMTS: B1(2100)              | -         | -         | -         | -         | -               | Y         | -          | -          | -         |
+| Network/Bearer - 3G UMTS - B1(2100)                       | Y         | Y         | Y         | Y         | -               | -         | -          | -          | Y         |
+| Network/Bearer - 3G UMTS - B2(1900)                       | Y         | Y         | Y         | Y         | -               | Y         | Y          | Y          | Y         |
+| Network/Bearer - 3G UMTS - B39(1880)                      | -         | -         | -         | -         | -               | Y         | -          | -          | -         |
+| Network/Bearer - 3G UMTS - B4(AWS)                        | -         | -         | -         | -         | -               | -         | Y          | Y          | Y         |
+| Network/Bearer - 3G UMTS - B5(850)                        | Y         | Y         | Y         | Y         | -               | Y         | Y          | Y          | Y         |
+| Network/Bearer - 3G UMTS - B8(900)                        | -         | Y         | Y         | -         | -               | -         | -          | -          | -         |
+| Network/Bearer - 3G UMTS - B8(900) 3G TD-SCDMA: B34(2010) | -         | -         | -         | -         | -               | Y         | -          | -          | -         |
+| Network/Bearer - 3G UMTS - B8(900); 3G CDMA: BC0(800)     | -         | -         | -         | Y         | -               | -         | -          | -          | -         |
+| Network/Bearer - 3G UMTS - BC1(1900)                      | -         | -         | -         | Y         | Y               | -         | -          | -          | -         |
+| Network/Bearer - 3G UMTS - BC10(800)                      | -         | -         | -         | Y         | -               | -         | -          | -          | -         |
+| Network/Bearer - 3G UMTS - WCDMA: B1(2100)                | -         | -         | -         | -         | -               | -         | Y          | Y          | -         |
+| Network/Bearer - 4G LTE - 4G FDD LTE: B1(2100)            | -         | -         | Y         | -         | -               | -         | -          | -          | Y         |
+| Network/Bearer - 4G LTE - 4G FDD LTE: B25(1900)           | -         | -         | -         | Y         | -               | -         | -          | -          | -         |
+| Network/Bearer - 4G LTE - 4G LTE FDD : B1(2100)           | -         | -         | -         | -         | -               | -         | Y          | Y          | -         |
+| Network/Bearer - 4G LTE - 4G LTE FDD : B2(1900)           | -         | -         | -         | -         | Y               | -         | -          | -          | -         |
+| Network/Bearer - 4G LTE - 4G TDD LTE: B38(2600)           | -         | -         | -         | -         | -               | Y         | -          | -          | -         |
+| Network/Bearer - 4G LTE - B1(2100)                        | -         | Y         | -         | -         | -               | -         | -          | -          | -         |
+| Network/Bearer - 4G LTE - B12(700)                        | Y         | -         | -         | -         | Y               | -         | Y          | Y          | Y         |
+| Network/Bearer - 4G LTE - B17(700)                        | Y         | Y         | -         | -         | Y               | -         | Y          | Y          | Y         |
+| Network/Bearer - 4G LTE - B2(1900)                        | Y         | Y         | Y         | -         | -               | -         | Y          | Y          | Y         |
+| Network/Bearer - 4G LTE - B20(800)                        | -         | Y         | -         | -         | -               | -         | -          | -          | -         |
+| Network/Bearer - 4G LTE - B26(850); 4G TDD LTE: B41(2500) | -         | -         | -         | Y         | -               | -         | -          | -          | -         |
+| Network/Bearer - 4G LTE - B28(700) 4G TDD LTE: B38(2600)  | -         | -         | Y         | -         | -               | -         | -          | -          | -         |
+| Network/Bearer - 4G LTE - B3(1800)                        | -         | Y         | Y         | -         | -               | -         | Y          | Y          | Y         |
+| Network/Bearer - 4G LTE - B39(1900)                       | -         | -         | -         | -         | -               | Y         | -          | -          | -         |
+| Network/Bearer - 4G LTE - B4(AWS)                         | Y         | Y         | Y         | -         | Y               | -         | Y          | Y          | Y         |
+| Network/Bearer - 4G LTE - B40(2300)                       | -         | -         | Y         | -         | -               | Y         | -          | -          | -         |
+| Network/Bearer - 4G LTE - B41(2500 4G FDD LTE: B3(1800)   | -         | -         | -         | -         | -               | Y         | -          | -          | -         |
+| Network/Bearer - 4G LTE - B5(850)                         | Y         | Y         | Y         | -         | Y               | -         | Y          | Y          | Y         |
+| Network/Bearer - 4G LTE - B7(2600)                        | -         | Y         | Y         | -         | -               | Y         | Y          | Y          | Y         |
+| Network/Bearer - 4G LTE - B8(900)                         | -         | Y         | Y         | -         | -               | -         | Y          | Y          | Y         |
+|-----------------------------------------------------------+-----------+-----------+-----------+-----------+-----------------+-----------+------------+------------+-----------|
+| Connectivity - Location Technology - Beidou               | -         | Y         | Y         | -         | -               | -         | -          | -          | -         |
+|-----------------------------------------------------------+-----------+-----------+-----------+-----------+-----------------+-----------+------------+------------+-----------|
+| Battery - Internet Usage Time(3G)                         | Up to 11h | Up to 10h | Up to 11h | Up to 11h | Up to 11h       | -         | Up to 11h  | Up to 11h  | Up to 11h |
+| Battery - Internet Usage Time(LTE)                        | Up to 11h | Up to 11h | Up to 10h | Up to 11h | Up to 11h       | -         | Up to 11h  | Up to 11h  | Up to 11h |
+| Battery - Internet Usage Time(Wi-Fi)                      | Up to 12h | Up to 12h | Up to 13h | Up to 12h | Up to 12h       | -         | Up to 12h  | Up to 12h  | Up to 12h |
+| Battery - Video Playback Time                             | Up to 14h | Up to 14h | Up to 12h | Up to 14h | Up to 14h       | -         | Up to 14h  | Up to 14h  | Up to 14h |
+| Battery - Audio Playback Time                             | Up to 80h | Up to 82h | Up to 57h | Up to 80h | Up to 80h       | -         | Up to 80h  | Up to 80h  | Up to 80h |
+| Battery - Talk time                                       | Up to 37h | Up to 20h | Up to 20h | Up to 37h | Up to 37h       | -         | Up to 37h  | Up to 37h  | Up to 37h |
+|-----------------------------------------------------------+-----------+-----------+-----------+-----------+-----------------+-----------+------------+------------+-----------|
 
 
 
-|-----------------------------------------------------------+----------+----------+----------+----------+-----------+----------+----------+-----------+----------+-----------|
-| Property                                                  | SM-N910A | SM-N910F | SM-N910G | SM-N910P | SM-N910R4 | SM-N910V | SM-N910T | SM-N910T3 | SM-N910V | SM-N910W8 |
-|-----------------------------------------------------------+----------+----------+----------+----------+-----------+----------+----------+-----------+----------+-----------|
-| Network/Bearer - 2G GSM - 2G CDMA: CDMA800                |        0 |        0 |        0 |        0 |         1 |        0 |        0 |         0 |        0 |         0 |
-| Network/Bearer - 2G GSM - DCS1800                         |        1 |        1 |        1 |        1 |         0 |        1 |        1 |         1 |        1 |         1 |
-| Network/Bearer - 2G GSM - GSM850                          |        1 |        1 |        1 |        0 |         0 |        1 |        1 |         1 |        1 |         1 |
-| Network/Bearer - 2G GSM - GSM900                          |        1 |        1 |        1 |        1 |         0 |        1 |        1 |         1 |        1 |         1 |
-| Network/Bearer - 2G GSM - PCS1900                         |        1 |        1 |        1 |        0 |         0 |        1 |        1 |         1 |        1 |         1 |
-| Network/Bearer - 2G GSM - PCS1900 2G CDMA: CDMA800        |        0 |        0 |        0 |        1 |         0 |        0 |        0 |         0 |        0 |         0 |
-| Network/Bearer - 2G GSM - USPCS1900                       |        0 |        0 |        0 |        1 |         1 |        0 |        0 |         0 |        0 |         0 |
-| Network/Bearer - 3G UMTS - 3G CDMA : BC0(800)             |        0 |        0 |        0 |        0 |         1 |        0 |        0 |         0 |        0 |         0 |
-| Network/Bearer - 3G UMTS - 3G UMTS: B1(2100)              |        0 |        0 |        0 |        0 |         0 |        1 |        0 |         0 |        1 |         0 |
-| Network/Bearer - 3G UMTS - B1(2100)                       |        1 |        1 |        1 |        1 |         0 |        0 |        0 |         0 |        0 |         1 |
-| Network/Bearer - 3G UMTS - B2(1900)                       |        1 |        1 |        1 |        1 |         0 |        1 |        1 |         1 |        1 |         1 |
-| Network/Bearer - 3G UMTS - B39(1880)                      |        0 |        0 |        0 |        0 |         0 |        1 |        0 |         0 |        1 |         0 |
-| Network/Bearer - 3G UMTS - B4(AWS)                        |        0 |        0 |        0 |        0 |         0 |        0 |        1 |         1 |        0 |         1 |
-| Network/Bearer - 3G UMTS - B5(850)                        |        1 |        1 |        1 |        1 |         0 |        1 |        1 |         1 |        1 |         1 |
-| Network/Bearer - 3G UMTS - B8(900)                        |        0 |        1 |        1 |        0 |         0 |        0 |        0 |         0 |        0 |         0 |
-| Network/Bearer - 3G UMTS - B8(900) 3G TD-SCDMA: B34(2010) |        0 |        0 |        0 |        0 |         0 |        1 |        0 |         0 |        1 |         0 |
-| Network/Bearer - 3G UMTS - B8(900); 3G CDMA: BC0(800)     |        0 |        0 |        0 |        1 |         0 |        0 |        0 |         0 |        0 |         0 |
-| Network/Bearer - 3G UMTS - BC1(1900)                      |        0 |        0 |        0 |        1 |         1 |        0 |        0 |         0 |        0 |         0 |
-| Network/Bearer - 3G UMTS - BC10(800)                      |        0 |        0 |        0 |        1 |         0 |        0 |        0 |         0 |        0 |         0 |
-| Network/Bearer - 3G UMTS - WCDMA: B1(2100)                |        0 |        0 |        0 |        0 |         0 |        0 |        1 |         1 |        0 |         0 |
-| Network/Bearer - 4G LTE - 4G FDD LTE: B1(2100)            |        0 |        0 |        1 |        0 |         0 |        0 |        0 |         0 |        0 |         1 |
-| Network/Bearer - 4G LTE - 4G FDD LTE: B25(1900)           |        0 |        0 |        0 |        1 |         0 |        0 |        0 |         0 |        0 |         0 |
-| Network/Bearer - 4G LTE - 4G LTE FDD : B1(2100)           |        0 |        0 |        0 |        0 |         0 |        0 |        1 |         1 |        0 |         0 |
-| Network/Bearer - 4G LTE - 4G LTE FDD : B2(1900)           |        0 |        0 |        0 |        0 |         1 |        0 |        0 |         0 |        0 |         0 |
-| Network/Bearer - 4G LTE - 4G TDD LTE: B38(2600)           |        0 |        0 |        0 |        0 |         0 |        1 |        0 |         0 |        1 |         0 |
-| Network/Bearer - 4G LTE - B1(2100)                        |        0 |        1 |        0 |        0 |         0 |        0 |        0 |         0 |        0 |         0 |
-| Network/Bearer - 4G LTE - B12(700)                        |        1 |        0 |        0 |        0 |         1 |        0 |        1 |         1 |        0 |         1 |
-| Network/Bearer - 4G LTE - B17(700)                        |        1 |        1 |        0 |        0 |         1 |        0 |        1 |         1 |        0 |         1 |
-| Network/Bearer - 4G LTE - B2(1900)                        |        1 |        1 |        1 |        0 |         0 |        0 |        1 |         1 |        0 |         1 |
-| Network/Bearer - 4G LTE - B20(800)                        |        0 |        1 |        0 |        0 |         0 |        0 |        0 |         0 |        0 |         0 |
-| Network/Bearer - 4G LTE - B26(850); 4G TDD LTE: B41(2500) |        0 |        0 |        0 |        1 |         0 |        0 |        0 |         0 |        0 |         0 |
-| Network/Bearer - 4G LTE - B28(700) 4G TDD LTE: B38(2600)  |        0 |        0 |        1 |        0 |         0 |        0 |        0 |         0 |        0 |         0 |
-| Network/Bearer - 4G LTE - B3(1800)                        |        0 |        1 |        1 |        0 |         0 |        0 |        1 |         1 |        0 |         1 |
-| Network/Bearer - 4G LTE - B39(1900)                       |        0 |        0 |        0 |        0 |         0 |        1 |        0 |         0 |        1 |         0 |
-| Network/Bearer - 4G LTE - B4(AWS)                         |        1 |        1 |        1 |        0 |         1 |        0 |        1 |         1 |        0 |         1 |
-| Network/Bearer - 4G LTE - B40(2300)                       |        0 |        0 |        1 |        0 |         0 |        1 |        0 |         0 |        1 |         0 |
-| Network/Bearer - 4G LTE - B41(2500 4G FDD LTE: B3(1800)   |        0 |        0 |        0 |        0 |         0 |        1 |        0 |         0 |        1 |         0 |
-| Network/Bearer - 4G LTE - B5(850)                         |        1 |        1 |        1 |        0 |         1 |        0 |        1 |         1 |        0 |         1 |
-| Network/Bearer - 4G LTE - B7(2600)                        |        0 |        1 |        1 |        0 |         0 |        1 |        1 |         1 |        1 |         1 |
-| Network/Bearer - 4G LTE - B8(900)                         |        0 |        1 |        1 |        0 |         0 |        0 |        1 |         1 |        0 |         1 |
-|-----------------------------------------------------------+----------+----------+----------+----------+-----------+----------+----------+-----------+----------+-----------|
-| #ERROR                                                    |       12 |       17 |       17 |       12 |         9 |       14 |       17 |        17 |       14 |        17 |
+|-----------------------------------------------------------+----------+----------+----------+----------+-----------+----------+----------+-----------+-----------|
+| Property                                                  | SM-N910A | SM-N910F | SM-N910G | SM-N910P | SM-N910R4 | SM-N910V | SM-N910T | SM-N910T3 | SM-N910W8 |
+|-----------------------------------------------------------+----------+----------+----------+----------+-----------+----------+----------+-----------+-----------|
+| Network/Bearer - 2G GSM - 2G CDMA: CDMA800                |        0 |        0 |        0 |        0 |         1 |        0 |        0 |         0 |         0 |
+| Network/Bearer - 2G GSM - DCS1800                         |        1 |        1 |        1 |        1 |         0 |        1 |        1 |         1 |         1 |
+| Network/Bearer - 2G GSM - GSM850                          |        1 |        1 |        1 |        0 |         0 |        1 |        1 |         1 |         1 |
+| Network/Bearer - 2G GSM - GSM900                          |        1 |        1 |        1 |        1 |         0 |        1 |        1 |         1 |         1 |
+| Network/Bearer - 2G GSM - PCS1900                         |        1 |        1 |        1 |        0 |         0 |        1 |        1 |         1 |         1 |
+| Network/Bearer - 2G GSM - PCS1900 2G CDMA: CDMA800        |        0 |        0 |        0 |        1 |         0 |        0 |        0 |         0 |         0 |
+| Network/Bearer - 2G GSM - USPCS1900                       |        0 |        0 |        0 |        1 |         1 |        0 |        0 |         0 |         0 |
+| Network/Bearer - 3G UMTS - 3G CDMA : BC0(800)             |        0 |        0 |        0 |        0 |         1 |        0 |        0 |         0 |         0 |
+| Network/Bearer - 3G UMTS - 3G UMTS: B1(2100)              |        0 |        0 |        0 |        0 |         0 |        1 |        0 |         0 |         0 |
+| Network/Bearer - 3G UMTS - B1(2100)                       |        1 |        1 |        1 |        1 |         0 |        0 |        0 |         0 |         1 |
+| Network/Bearer - 3G UMTS - B2(1900)                       |        1 |        1 |        1 |        1 |         0 |        1 |        1 |         1 |         1 |
+| Network/Bearer - 3G UMTS - B39(1880)                      |        0 |        0 |        0 |        0 |         0 |        1 |        0 |         0 |         0 |
+| Network/Bearer - 3G UMTS - B4(AWS)                        |        0 |        0 |        0 |        0 |         0 |        0 |        1 |         1 |         1 |
+| Network/Bearer - 3G UMTS - B5(850)                        |        1 |        1 |        1 |        1 |         0 |        1 |        1 |         1 |         1 |
+| Network/Bearer - 3G UMTS - B8(900)                        |        0 |        1 |        1 |        0 |         0 |        0 |        0 |         0 |         0 |
+| Network/Bearer - 3G UMTS - B8(900) 3G TD-SCDMA: B34(2010) |        0 |        0 |        0 |        0 |         0 |        1 |        0 |         0 |         0 |
+| Network/Bearer - 3G UMTS - B8(900); 3G CDMA: BC0(800)     |        0 |        0 |        0 |        1 |         0 |        0 |        0 |         0 |         0 |
+| Network/Bearer - 3G UMTS - BC1(1900)                      |        0 |        0 |        0 |        1 |         1 |        0 |        0 |         0 |         0 |
+| Network/Bearer - 3G UMTS - BC10(800)                      |        0 |        0 |        0 |        1 |         0 |        0 |        0 |         0 |         0 |
+| Network/Bearer - 3G UMTS - WCDMA: B1(2100)                |        0 |        0 |        0 |        0 |         0 |        0 |        1 |         1 |         0 |
+| Network/Bearer - 4G LTE - 4G FDD LTE: B1(2100)            |        0 |        0 |        1 |        0 |         0 |        0 |        0 |         0 |         1 |
+| Network/Bearer - 4G LTE - 4G FDD LTE: B25(1900)           |        0 |        0 |        0 |        1 |         0 |        0 |        0 |         0 |         0 |
+| Network/Bearer - 4G LTE - 4G LTE FDD : B1(2100)           |        0 |        0 |        0 |        0 |         0 |        0 |        1 |         1 |         0 |
+| Network/Bearer - 4G LTE - 4G LTE FDD : B2(1900)           |        0 |        0 |        0 |        0 |         1 |        0 |        0 |         0 |         0 |
+| Network/Bearer - 4G LTE - 4G TDD LTE: B38(2600)           |        0 |        0 |        0 |        0 |         0 |        1 |        0 |         0 |         0 |
+| Network/Bearer - 4G LTE - B1(2100)                        |        0 |        1 |        0 |        0 |         0 |        0 |        0 |         0 |         0 |
+| Network/Bearer - 4G LTE - B12(700)                        |        1 |        0 |        0 |        0 |         1 |        0 |        1 |         1 |         1 |
+| Network/Bearer - 4G LTE - B17(700)                        |        1 |        1 |        0 |        0 |         1 |        0 |        1 |         1 |         1 |
+| Network/Bearer - 4G LTE - B2(1900)                        |        1 |        1 |        1 |        0 |         0 |        0 |        1 |         1 |         1 |
+| Network/Bearer - 4G LTE - B20(800)                        |        0 |        1 |        0 |        0 |         0 |        0 |        0 |         0 |         0 |
+| Network/Bearer - 4G LTE - B26(850); 4G TDD LTE: B41(2500) |        0 |        0 |        0 |        1 |         0 |        0 |        0 |         0 |         0 |
+| Network/Bearer - 4G LTE - B28(700) 4G TDD LTE: B38(2600)  |        0 |        0 |        1 |        0 |         0 |        0 |        0 |         0 |         0 |
+| Network/Bearer - 4G LTE - B3(1800)                        |        0 |        1 |        1 |        0 |         0 |        0 |        1 |         1 |         1 |
+| Network/Bearer - 4G LTE - B39(1900)                       |        0 |        0 |        0 |        0 |         0 |        1 |        0 |         0 |         0 |
+| Network/Bearer - 4G LTE - B4(AWS)                         |        1 |        1 |        1 |        0 |         1 |        0 |        1 |         1 |         1 |
+| Network/Bearer - 4G LTE - B40(2300)                       |        0 |        0 |        1 |        0 |         0 |        1 |        0 |         0 |         0 |
+| Network/Bearer - 4G LTE - B41(2500 4G FDD LTE: B3(1800)   |        0 |        0 |        0 |        0 |         0 |        1 |        0 |         0 |         0 |
+| Network/Bearer - 4G LTE - B5(850)                         |        1 |        1 |        1 |        0 |         1 |        0 |        1 |         1 |         1 |
+| Network/Bearer - 4G LTE - B7(2600)                        |        0 |        1 |        1 |        0 |         0 |        1 |        1 |         1 |         1 |
+| Network/Bearer - 4G LTE - B8(900)                         |        0 |        1 |        1 |        0 |         0 |        0 |        1 |         1 |         1 |
+|-----------------------------------------------------------+----------+----------+----------+----------+-----------+----------+----------+-----------+-----------|
+| #ERROR                                                    |       12 |       17 |       17 |       12 |         9 |       14 |       17 |        17 |        17 |
 #+TBLFM: @42=vsum(@2..@-1)

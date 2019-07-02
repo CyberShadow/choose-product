@@ -21,7 +21,6 @@ void main()
 		"SM-N910V",
 		"SM-N910T",
 		"SM-N910T3",
-		"SM-N910V",
 		"SM-N910W8",
 
 		// "SM-N915F",
