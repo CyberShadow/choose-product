@@ -1,0 +1,3 @@
+[submodule "lineage/lineage_wiki"]
+	path = lineage/lineage_wiki
+	url = https://github.com/LineageOS/lineage_wiki
