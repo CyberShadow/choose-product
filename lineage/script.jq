@@ -7,7 +7,7 @@
         | any(. > "2019")
       )
   | select(
-        (.storage | contains("256"))
+        (.storage | [match("[0-9]+"; "g") .string | tonumber] | any(. >= 128))
         or
         (.sdcard | (. != null and . != "none"))
       )
@@ -17,8 +17,8 @@
                       + ((.peripherals | any(contains("wireless charging"))         ) | if . then 1 else 0 end)
                       + ((.peripherals | any(contains("Dual SIM"))                  ) | if . then 1 else 0 end)
                       + ((.sdcard | (. != null and . != "none")                     ) | if . then 1 else 0 end)
-                      + ((.ram | (contains("8") or contains("10") or contains("12"))) | if . then 1 else 0 end)
-                      + ((.battery.removable)                                         | if . then 2 else 0 end)
+                      + ((.ram | [match("[0-9]+"; "g") .string | tonumber] | any(. >= 8) ) | if . then 1 else 0 end)
+                      + ((.battery.removable                                        ) | if . then 2 else 0 end)
                   )
       }
   | {
