@@ -1,3 +1,5 @@
+def numbers: [match("[0-9]+"; "g") .string | tonumber];
+
 [
   .[]
   | select(.maintainers|length > 0)
@@ -7,7 +9,7 @@
         | any(. > "2019")
       )
   | select(
-        (.storage | [match("[0-9]+"; "g") .string | tonumber] | any(. >= 128))
+        (.storage | numbers | any(. >= 128))
         or
         (.sdcard | (. != null and . != "none"))
       )
@@ -17,7 +19,7 @@
                       + ((.peripherals | any(contains("wireless charging"))         ) | if . then 1 else 0 end)
                       + ((.peripherals | any(contains("Dual SIM"))                  ) | if . then 1 else 0 end)
                       + ((.sdcard | (. != null and . != "none")                     ) | if . then 1 else 0 end)
-                      + ((.ram | [match("[0-9]+"; "g") .string | tonumber] | any(. >= 8) ) | if . then 1 else 0 end)
+                      + ((.ram | numbers | any(. >= 8)                              ) | if . then 1 else 0 end)
                       + ((.battery.removable                                        ) | if . then 2 else 0 end)
                   )
       }
