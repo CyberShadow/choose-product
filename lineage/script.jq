@@ -30,6 +30,7 @@
     storage  : .storage
   }
 ]
+| sort_by(.codename)
 | sort_by(-.score)
 | [ .[0] | keys_unsorted ] +
   [ .[0] | keys_unsorted | [ .[] | length | "-" * . ] ] +
