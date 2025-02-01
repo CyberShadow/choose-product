@@ -29,7 +29,15 @@ def released_after(when):
                       + ((released_after("2021-04")                                 ) | if . then 0.25  else 0 end)
                       + ((released_after("2021-07")                                 ) | if . then 0.25  else 0 end)
                       + ((released_after("2021-10")                                 ) | if . then 0.25  else 0 end)
-                      + ((.screen_res | contains("1080") | not                      ) | if . then 0.25  else 0 end)
+                      + ((released_after("2022-01")                                 ) | if . then 0.25  else 0 end)
+                      + ((released_after("2022-04")                                 ) | if . then 0.25  else 0 end)
+                      + ((released_after("2022-07")                                 ) | if . then 0.25  else 0 end)
+                      + ((released_after("2022-10")                                 ) | if . then 0.25  else 0 end)
+                      + ((released_after("2023-01")                                 ) | if . then 0.25  else 0 end)
+                      + ((released_after("2023-04")                                 ) | if . then 0.25  else 0 end)
+                      + ((released_after("2023-07")                                 ) | if . then 0.25  else 0 end)
+                      + ((released_after("2023-10")                                 ) | if . then 0.25  else 0 end)
+                      + ((.screen.resolution | contains("1080") | not               ) | if . then 0.25  else 0 end)
                       + ((.peripherals | any(contains("wireless charging"))         ) | if . then 0.125 else 0 end)
                       + ((.peripherals | any(contains("Dual SIM"))                  ) | if . then 1     else 0 end)
                       + ((.sdcard | (. != null and . != "none")                     ) | if . then 1     else 0 end)
@@ -46,7 +54,7 @@ def released_after(when):
     codename : .codename,
     vendor   : .vendor,
     name     : .name,
-    sdcard   : .sdcard,
+    sdcard   : .sdcard.sizeMax,
     storage  : .storage,
     release  : (.release | if type == "array" then [.[][]] else [.] end | max),
   }
