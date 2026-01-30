@@ -33,12 +33,12 @@ final class CPUSpeed
 
 	this()
 	{
-		"https://www.cpubenchmark.net/cpu_list.php"
+		"https://www.cpubenchmark.net/cpu-list/all"
 			.getFileAsFirefox
 			.bytes
 			.assumeUTF
 			.assumeUnique
-			.matchAllCaptures(re!`<tr id="cpu.*"><td><a href="cpu_lookup\.php\?cpu=.*">(.*)</a></td><td>(.*)</td><td>(.*)</td><td class="vLink">.*</td><td class="pLink">.*</td></tr>`,
+			.matchAllCaptures(re!`<tr id="cpu.*"><td><a href="/cpu_lookup\.php\?cpu=.*">(.*)</a></td><td>(.*)</td><td>(.*)</td><td class="vLink">.*</td><td class="pLink">.*</td></tr>`,
 				(string name, string markStr, string rankStr)
 				{
 					cpus ~= CPU(
