@@ -23,6 +23,7 @@ struct Product
 {
 	int id;
 	string cpu;
+	int ram_size;
 	float price;
 	struct ServerDiskData { int[] nvme, sata, hdd, general; }
 	ServerDiskData serverDiskData;
