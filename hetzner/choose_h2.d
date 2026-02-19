@@ -11,8 +11,6 @@ import ae.utils.regex;
 import hetzner;
 import cpuspeed;
 
-version = maria;
-
 void main()
 {
 	auto servers = getProducts();
