@@ -58,8 +58,20 @@ void main()
 			servers[idx].id, servers[idx].price,
 			cpus.getCPU(servers[idx].cpu).mark,
 			servers[idx].ram_size,
-			servers[idx].serverDiskData.hdd.length.to!string ~ "x" ~ servers[idx].serverDiskData.hdd[0].to!string,
-			servers[idx].serverDiskData.nvme.length.to!string ~ "x" ~ servers[idx].serverDiskData.nvme[0].to!string,
+			servers[idx].serverDiskData.hdd.hddStr,
+			servers[idx].serverDiskData.nvme.hddStr,
 			scores[idx]
 		);
+}
+
+string hddStr(int[] hdds)
+{
+	int[int] counts;
+	foreach (hdd; hdds)
+		counts[hdd]++;
+
+	return counts
+		.byKeyValue
+		.map!(pair => pair.value.to!string ~ "x" ~ pair.key.to!string)
+		.join(", ");
 }
