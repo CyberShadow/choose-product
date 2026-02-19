@@ -37,7 +37,7 @@ void main()
 					score -= 100000;
 				score += totalNVME * 0.2;
 				score += totalStorage * 0.1;
-				score /= server.price;
+				score /= server.price ^^ 1.5;
 				return score;
 			}
 		)
@@ -45,7 +45,6 @@ void main()
 
 	auto order = servers.length.iota.array;
 	order = order
-		.filter!(idx => servers[idx].price <= 100)
 		.array
 		.sort!((a, b) => scores[a] > scores[b])
 		.release;
