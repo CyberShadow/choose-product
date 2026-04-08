@@ -35,6 +35,12 @@ void main()
 				auto totalStorage = chain(server.serverDiskData.nvme, server.serverDiskData.sata, server.serverDiskData.hdd).sum;
 				if (totalStorage < 8000)
 					score -= 100000;
+				if (server.datacenter == "HEL1-DC2")
+					score -= 0;
+				else if (server.datacenter.startsWith("HEL1"))
+					score -= 1000;
+				else
+					score -= 10000;
 				score += totalNVME * 0.2;
 				score += totalStorage * 0.1;
 				score /= server.price ^^ 1.5;
@@ -50,11 +56,12 @@ void main()
 		.release;
 	writefln("Filtered out %d candidates.", order.length);
 
-	writeln("Rank\tID\tPrice\tCPUMark\tRAM\tHDD\tNVMe\tScore");
+	writeln("Rank\tID\tPrice\tDC\t\tCPUMark\tRAM\tHDD\tNVMe\tScore");
 	foreach (idx; order[0 .. 50])
-		writefln("#%d\t%d\t%s\t%s\t%s\t%s\t%s\t%s",
+		writefln("#%d\t%d\t%s\t%s\t%s\t%s\t%s\t%s\t%s",
 			1 + idx,
 			servers[idx].id, servers[idx].price,
+			servers[idx].datacenter,
 			cpus.getCPU(servers[idx].cpu).mark,
 			servers[idx].ram_size,
 			servers[idx].serverDiskData.hdd.hddStr,

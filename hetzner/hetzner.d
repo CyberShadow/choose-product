@@ -27,6 +27,7 @@ struct Product
 	float price;
 	struct ServerDiskData { int[] nvme, sata, hdd, general; }
 	ServerDiskData serverDiskData;
+	string datacenter;
 	// ...
 }
 
