@@ -1,0 +1,14 @@
+# Per-purchase HTTP caches, cookie jars, and compiled binaries.
+purchases/*/cache/
+purchases/*/cache_*/
+purchases/*/cookies/
+purchases/*/web/
+purchases/*/choose
+# Run outputs kept locally unless deliberately committed (git add -f).
+purchases/*/results*.org
+purchases/*/*.txt
+purchases/*/.txt
+# Store/source-layer scratch/binaries.
+stores/*/cache/
+sources/*/cache/
+stores/*/print_cpuspeed

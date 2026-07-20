@@ -1,3 +1,3 @@
-[submodule "lineage/lineage_wiki"]
-	path = lineage/lineage_wiki
+[submodule "purchases/p_2021_07_10_phone_lineage/lineage_wiki"]
+	path = purchases/p_2021_07_10_phone_lineage/lineage_wiki
 	url = https://github.com/LineageOS/lineage_wiki
