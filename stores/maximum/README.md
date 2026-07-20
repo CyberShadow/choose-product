@@ -8,7 +8,10 @@ TBD — not yet verified against ground truth.
 
 ## Prices
 
-TBD. (The 2019 scraper never parsed prices.)
+- When a product is discounted, the displayed "original price" is often
+  entirely fictional — never an actual price point. Don't treat discount
+  size as meaningful; compare the final price against other stores.
+- Otherwise TBD. (The 2019 scraper never parsed prices.)
 
 ## Shipping
 
