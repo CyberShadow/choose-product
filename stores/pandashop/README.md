@@ -12,7 +12,7 @@ TBD. (The 2019 scraper never parsed prices.)
 
 ## Shipping
 
-TBD.
+- Does not ship to the suburbs — usually a blocker, albeit not a hard one.
 
 ## Payment
 
