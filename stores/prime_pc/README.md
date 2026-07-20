@@ -57,7 +57,10 @@ TBD.
 
 ## Payment
 
-TBD.
+- No payment by card on delivery — usually a hindrance for larger purchases.
+- Phone call 2026-07-03: the consultant said payment by transfer is possible,
+  without qualifying it as legal-entities-only. Worth investigating whether
+  that extends to natural persons.
 
 ## Scraping notes
 
@@ -81,4 +84,6 @@ TBD.
   and record it.
 - Is there an intermediate «мало» level?
 - Do listing/category pages carry the stock dot, or product pages only?
-- Shipping and payment options.
+- Shipping options.
+- Is payment by transfer (per the 2026-07-03 call) available to natural
+  persons, or only legal entities?
